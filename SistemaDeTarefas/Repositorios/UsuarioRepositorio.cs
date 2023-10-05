@@ -10,7 +10,7 @@ namespace SistemaDeTarefas.Repositorios
         private readonly SistemaTarefasDBContext _dbContext;
         public UsuarioRepositorio(SistemaTarefasDBContext sistemaTarefasDBContext)
         {
-            _dbContext = sistemaTarefasDBContext
+            _dbContext = sistemaTarefasDBContext;
         }
 
         public async Task<UsuarioModel> BuscarPorId(int id)
