@@ -27,6 +27,8 @@ namespace SistemaDeTarefas
                 (options => options.UseSqlServer("Server=DESKTOP-I91URTC\\SQLEXPRESS;Database=DB_SistemaTarefas;Trusted_Connection=True;Encrypt=False;"));
 
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            builder.Services.AddScoped<ITarefaRepositorio, TarefaRepositorio>();
+
 
             var app = builder.Build();
 
